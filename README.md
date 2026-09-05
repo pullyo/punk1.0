@@ -14,7 +14,7 @@ Codex가 긴 빌드·테스트 로그 전체를 문맥에 넣기 전에 필요�
 
 > $token-saver 토큰 사용을 줄이면서 테스트 실패 원인을 찾아줘.
 
-CLI는 설치 전에도 사용할 수 있습니다. `python`은 실행 가능한 Python 3.10+ 경로로 바꿀 수 있습니다. 이 PC의 번들 런타임은 `C:\Users\PC\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe`입니다.
+CLI는 설치 전에도 사용할 수 있습니다. 아래 예시의 `python`은 시스템에서 실행 가능한 Python 3.10+ 경로로 바꿔 사용할 수 있습니다.
 
 ```powershell
 python .\token-saver\scripts\token_saver.py compact .\build.log --max-chars 6000
@@ -63,7 +63,3 @@ python -m unittest discover -s tests -v
 python tests/benchmark.py
 python scripts/package_plugin.py
 ```
-=======
-# Puncture-
-A plugin that reduces Codex token consumption
->>>>>>> origin/main

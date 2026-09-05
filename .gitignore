@@ -1,5 +1,31 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Project-local/generated files
 .token-saver/
 dist/
+build/
 .validation-deps/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
