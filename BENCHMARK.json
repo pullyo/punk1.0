@@ -1,0 +1,29 @@
+{
+  "method": "Synthetic fixtures; 6000-character cap including metadata. Excludes skill/prompt overhead and subsequent reads; does not measure actual tokens or billing.",
+  "results": [
+    {
+      "case": "repeated-build",
+      "input_chars": 200035,
+      "output_chars": 593,
+      "character_reduction_percent": 99.7
+    },
+    {
+      "case": "unique-test-log",
+      "input_chars": 203930,
+      "output_chars": 5710,
+      "character_reduction_percent": 97.2
+    },
+    {
+      "case": "korean-log",
+      "input_chars": 75014,
+      "output_chars": 560,
+      "character_reduction_percent": 99.25
+    },
+    {
+      "case": "short-output",
+      "input_chars": 20,
+      "output_chars": 540,
+      "character_reduction_percent": -2600.0
+    }
+  ]
+}
