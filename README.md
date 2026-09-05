@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Token Saver
 
 Codex가 긴 빌드·테스트 로그 전체를 문맥에 넣기 전에 필요한 부분만 읽도록 돕는 로컬 플러그인입니다. Python 3.10 이상과 표준 라이브러리만 사용하며 API 호출은 없습니다.
@@ -63,3 +64,7 @@ python -m unittest discover -s tests -v
 python tests/benchmark.py
 python scripts/package_plugin.py
 ```
+=======
+# Puncture-
+A plugin that reduces Codex token consumption
+>>>>>>> origin/main
