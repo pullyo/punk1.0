@@ -251,8 +251,9 @@ def excerpt(
         visited.add(i)
 
         line = clean(source.lines[i])
+        dedupe_key = line
 
-        if not ranged and line in seen:
+        if not ranged and dedupe_key in seen:
             continue
 
         if remaining < 32:
@@ -285,7 +286,7 @@ def excerpt(
         remaining -= len(record)
 
         if not ranged:
-            seen.add(line)
+            seen.add(dedupe_key)
 
     body = "".join(
         chosen[i]

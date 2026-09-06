@@ -184,6 +184,24 @@ class TokenSaverTests(unittest.TestCase):
             3,
         )
 
+    def test_long_exact_duplicates_collapsed_after_clipping(self):
+        line = "error " + "x" * 1200
+        output = module.excerpt(
+            self.source(
+                "\n".join([line] * 20)
+            )
+        )
+
+        self.assertEqual(
+            output.count("[clipped]"),
+            1,
+        )
+
+        self.assertIn(
+            "Shown: 1 lines",
+            output,
+        )
+
     def test_retrieve_omitted_range(self):
         source = self.source(
             "\n".join(
